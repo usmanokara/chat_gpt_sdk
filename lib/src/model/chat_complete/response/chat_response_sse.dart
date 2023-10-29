@@ -2,8 +2,8 @@ import 'package:chat_gpt_sdk/src/model/chat_complete/response/chat_choice_sse.da
 import 'package:chat_gpt_sdk/src/model/complete_text/response/usage.dart';
 
 class ChatResponseSSE {
-  final String id;
-  final String object;
+  final String? id;
+  final String? object;
   final int? created;
   final List<ChatChoiceSSE>? choices;
   final Usage? usage;

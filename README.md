@@ -123,7 +123,7 @@ openAI.token;
   
   ///cancel request
   openAI.cancelAIGenerate();
-  print(response);
+  <!-- print(response); -->
 }
 ```
 
@@ -150,7 +150,7 @@ FutureBuilder<CTResponse?>(
   final request = CompleteText(
           prompt: "Hello world", maxTokens: 200, model: TextDavinci3Model());
   openAI.onCompletionSSE(request: request).listen((it) {
-    debugPrint(it.choices.last.text);
+    <!-- debugPrint(it.choices.last.text); -->
   });
 }
 ```
@@ -166,7 +166,7 @@ FutureBuilder<CTResponse?>(
 
     final response = await openAI.onChatCompletion(request: request);
     for (var element in response!.choices) {
-      print("data -> ${element.message?.content}");
+      <!-- print("data -> ${element.message?.content}"); -->
     }
   }
 ```

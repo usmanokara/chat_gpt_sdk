@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:math';
+
 import 'package:chat_gpt_sdk/chat_gpt_sdk.dart';
 import 'package:example/constants.dart';
 import 'package:flutter/material.dart';
@@ -75,7 +76,7 @@ class _TranslateScreenState extends State<TranslateScreen> {
         functionCall: FunctionCall.auto);
 
     ChatCTResponse? response = await openAI.onChatCompletion(request: request);
-    debugPrint("$response");
+    // debugPrint("$response");
   }
 
   void gpt4() async {
