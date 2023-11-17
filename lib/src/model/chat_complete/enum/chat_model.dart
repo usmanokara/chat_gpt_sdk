@@ -45,6 +45,9 @@ class Gpt40631ChatModel extends ChatModel {
   Gpt40631ChatModel() : super(model: kChatGpt40631);
 }
 
+class Gpt416kturboChatModel extends ChatModel {
+  Gpt416kturboChatModel() : super(model: "gpt-4-1106-preview");
+}
 // enum ChatModel {
 //   gptTurbo,
 //

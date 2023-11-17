@@ -166,7 +166,8 @@ FutureBuilder<CTResponse?>(
 
     final response = await openAI.onChatCompletion(request: request);
     for (var element in response!.choices) {
-      <!-- print("data -> ${element.message?.content}"); -->
+      print("data -> ${element.message?.content}");
+      
     }
   }
 ```

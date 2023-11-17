@@ -25,8 +25,8 @@ class ErrorData {
 
     return ErrorData(
       message: json['message'],
-      code: json['code'],
-      type: json['type'],
+      code: json['code']?.toString() ?? "",
+      type: json['type']?.toString() ?? "",
     );
   }
 
